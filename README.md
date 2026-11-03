@@ -44,6 +44,8 @@ python -m pytest                         # tests
 | `dashboard/app.py` | Streamlit dashboard (9 pages) |
 | `notebooks/01_eda.ipynb` | Exploratory data analysis |
 | `artifacts/` | Model bundle, metrics, per-device predictions, benchmark, report and figures |
+| `docs/TECHNICAL_REPORT.md` | Technical implementation report: design, methods, results, limitations |
+| `docs/AI_Fmax_Search_Final_Presentation.pptx` | Final presentation (13 slides, with speaker notes) |
 
 ## Dashboard pages
 
