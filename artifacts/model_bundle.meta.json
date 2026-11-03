@@ -1,0 +1,26 @@
+{
+  "model_name": "linear_regression",
+  "alpha": 0.05,
+  "conformal_q_mhz": 48.275224755604086,
+  "residual_std_mhz": 25.101151870090153,
+  "data_fingerprint": "25800ebb5a6d76be",
+  "package_version": "1.0.0",
+  "created_utc": "2026-11-03T09:34:18+00:00",
+  "features": [
+    "ro_01",
+    "ro_02",
+    "ro_03",
+    "ro_04",
+    "ro_05",
+    "ro_06",
+    "ro_07",
+    "ro_08",
+    "ro_09",
+    "ro_10",
+    "iddq_norm",
+    "vmin_norm",
+    "die_x",
+    "die_y",
+    "radius_sq"
+  ]
+}

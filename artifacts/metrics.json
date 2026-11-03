@@ -1,0 +1,139 @@
+{
+  "data_validation": {
+    "n_rows": 6000,
+    "n_cols": 25,
+    "missing_values": {},
+    "duplicate_rows": 0,
+    "duplicate_unit_ids": 0,
+    "split_counts": {
+      "test": 4000,
+      "train": 1500,
+      "calibration": 500
+    },
+    "outliers_iqr": {
+      "ro_03": 1,
+      "ro_09": 1
+    },
+    "warnings": [],
+    "ok": true,
+    "true_bin_recomputed_agreement": 0.9991666666666666
+  },
+  "selected_model": "linear_regression",
+  "alpha": 0.05,
+  "regression_test": {
+    "mae_mhz": 20.307390715199872,
+    "rmse_mhz": 25.381218991612563,
+    "r2": 0.9405320456865122,
+    "mape_pct": 1.0232713853324662
+  },
+  "baseline_supplied_prediction_test": {
+    "mae_mhz": 21.532024999999997,
+    "rmse_mhz": 26.944391948975206,
+    "r2": 0.9329814817823203,
+    "mape_pct": 1.086389205336403
+  },
+  "conformal": {
+    "absolute": {
+      "coverage": 0.9465,
+      "mean_width_mhz": 96.55044951120816,
+      "median_width_mhz": 96.55044951120817,
+      "q_mhz": 48.275224755604086
+    },
+    "normalized": {
+      "coverage": 0.952,
+      "mean_width_mhz": 104.09743882173879,
+      "median_width_mhz": 102.69379082629575,
+      "q_mhz": 2.66139853928435
+    }
+  },
+  "ood": {
+    "test_fallback_rate": 0.006,
+    "shifted_unit_detection_rate": 0.788,
+    "mahalanobis_threshold": 5.799272557223413
+  },
+  "search": {
+    "linear": {
+      "mean_tests": 40.47325,
+      "p95_tests": 58.0,
+      "max_tests": 75,
+      "mean_time_ms": 1214.1975,
+      "mean_abs_error_mhz": 5.8356749999999975,
+      "bin_accuracy": 0.90275,
+      "over_bin_escape_rate": 0.0,
+      "over_bin_escapes": 0,
+      "under_bin_rate": 0.09725,
+      "edge_extension_rate": 0.0,
+      "fallback_rate": 0.0,
+      "saving_vs_binary_pct": -527.1033467616982,
+      "saving_vs_linear_pct": 0.0
+    },
+    "binary": {
+      "mean_tests": 6.454,
+      "p95_tests": 7.0,
+      "max_tests": 7,
+      "mean_time_ms": 193.62,
+      "mean_abs_error_mhz": 5.7689749999999975,
+      "bin_accuracy": 0.905,
+      "over_bin_escape_rate": 0.0,
+      "over_bin_escapes": 0,
+      "under_bin_rate": 0.095,
+      "edge_extension_rate": 0.0,
+      "fallback_rate": 0.0,
+      "saving_vs_binary_pct": 0.0,
+      "saving_vs_linear_pct": 84.05366507508046
+    },
+    "windowed_supplied": {
+      "mean_tests": 3.94325,
+      "p95_tests": 7.0,
+      "max_tests": 9,
+      "mean_time_ms": 118.2975,
+      "mean_abs_error_mhz": 5.757374999999999,
+      "bin_accuracy": 0.90475,
+      "over_bin_escape_rate": 0.0,
+      "over_bin_escapes": 0,
+      "under_bin_rate": 0.09525,
+      "edge_extension_rate": 0.10475,
+      "fallback_rate": 0.0,
+      "saving_vs_binary_pct": 38.90223117446545,
+      "saving_vs_linear_pct": 90.25714515142718
+    },
+    "windowed_ml": {
+      "mean_tests": 3.83925,
+      "p95_tests": 4.0,
+      "max_tests": 9,
+      "mean_time_ms": 115.1775,
+      "mean_abs_error_mhz": 5.692074999999997,
+      "bin_accuracy": 0.90625,
+      "over_bin_escape_rate": 0.0,
+      "over_bin_escapes": 0,
+      "under_bin_rate": 0.09375,
+      "edge_extension_rate": 0.03875,
+      "fallback_rate": 0.0,
+      "saving_vs_binary_pct": 40.51363495506662,
+      "saving_vs_linear_pct": 90.51410499527466
+    },
+    "adaptive": {
+      "mean_tests": 3.87,
+      "p95_tests": 4.0,
+      "max_tests": 9,
+      "mean_time_ms": 116.1,
+      "mean_abs_error_mhz": 5.730424999999997,
+      "bin_accuracy": 0.9045,
+      "over_bin_escape_rate": 0.0,
+      "over_bin_escapes": 0,
+      "under_bin_rate": 0.0955,
+      "edge_extension_rate": 0.04025,
+      "fallback_rate": 0.006,
+      "saving_vs_binary_pct": 40.037186241090794,
+      "saving_vs_linear_pct": 90.4381288875986
+    }
+  },
+  "acceptance": {
+    "r2>=0.90": true,
+    "coverage~95%": true,
+    "iteration_reduction>=30%": true,
+    "bin_accuracy>=95%": false,
+    "zero_leakage": true,
+    "fallback_executes": true
+  }
+}
